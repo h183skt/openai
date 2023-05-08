@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y gcc
 
 # アプリケーションの依存関係をインストール
 COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m pip install --no-cache-dir -r requirements.txt
 
 # # アプリケーションのソースコードをコピー
 # COPY . .
