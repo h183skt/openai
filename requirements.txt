@@ -1,0 +1,4 @@
+line-bot-sdk==1.21.0
+Flask==2.1.1
+requests==2.27.1
+openai==0.27.0
