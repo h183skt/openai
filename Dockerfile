@@ -11,11 +11,11 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y gcc
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# アプリケーションのソースコードをコピー
-COPY . .
+# # アプリケーションのソースコードをコピー
+# COPY . .
 
-# ポートを公開
-EXPOSE 80
+# # ポートを公開
+# EXPOSE 80
 
-# アプリケーションを実行
-CMD ["python", "line_bot.py"]
+# # アプリケーションを実行
+# CMD ["python", "line_bot.py"]
