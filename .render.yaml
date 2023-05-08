@@ -2,11 +2,4 @@ services:
   - type: web
     name: line-bot
     env: docker
-    envVars:
-      - key: CHANNEL_SECRET
-        value: your_channel_secret
-      - key: CHANNEL_ACCESS_TOKEN
-        value: your_channel_access_token
-      - key: OPENAI_API_KEY
-        value: your_openai_api_key
     healthCheckPath: /health
